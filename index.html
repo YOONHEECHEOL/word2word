@@ -10,10 +10,14 @@
 </head>
 
 <body>
-  <div><span id="order">1</span>첫번째 참가자</div>
-  <div>제시어: <span id="word"></span></div>
+  <ul class="list">
+    <li>
+      <span id="order">1</span>첫번째 참가자 : <span class="start">제시어 : </span><span id="word"></span>
+    </li>
+  </ul>
+
   <input type="text">
-  <button>입력</button>
+  <button onclick="insertWord()">입력</button>
 
 </body>
 
