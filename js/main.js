@@ -6,6 +6,7 @@ const order = document.querySelector('#order');
 const start = document.querySelector('.start');
 const word = document.querySelector('#word');
 let input = document.querySelector('input');
+const btn = document.querySelector('button');
 
 function insertWord() {
   word.textContent = input.textContent;
@@ -13,7 +14,7 @@ function insertWord() {
 }
 
 if (!word) {
-
+  btn.addEventListener('click',)
 } else {
 
 }
