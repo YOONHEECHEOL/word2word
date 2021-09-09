@@ -31,6 +31,11 @@ function wordCheck(input) { // 끝말잇기 체크
   }
 }
 
+function clear() {
+  inputText.value = '';
+  inputText.focus();
+}
+
 // console.log(wordCheck('실타래'));
 
 // 1. 제시어가 비어있음?
@@ -41,22 +46,21 @@ const onInput = (event) => {
 }
 
 const onClickBtn = () => {
-
-  if (!newWord) { // 제시어가 비어있음    
+  if (!word.textContent) { // 제시어가 비어있음    
     if (lengthCheck(newWord)) {
-      console.log(newWord)
-      word.textContent = newWord
+      console.log(newWord);
+      word.textContent = newWord;
+      clear();
     } else {
       alert('제시어 채우기!')
     }
-    console.log('sucess!')
   } else { // 제시어가 비어있지 않음
     if (lengthCheck(newWord) && wordCheck(newWord)) {
       word.textContent = newWord
+      clear();
     } else {
-      alert('뷁!')
+      clear();
     }
-    console.log('error!')
   }
 }
 
