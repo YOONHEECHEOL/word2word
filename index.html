@@ -6,18 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>word2word</title>
 
-  <script defer src="./js/main.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <script defer src="./js/main.js"></script> -->
+  <script defer src="./js/calc.js"></script>
 </head>
 
 <body>
-  <ul class="list">
-    <li>
-      <span id="order">1</span>첫번째 참가자 : <span class="start">제시어 : </span><span id="word"></span>
-    </li>
-  </ul>
+  <!-- 쿵쿵따 -->
+  <!-- <div>
+    <ul class="list">
+      <li>
+        <span id="order">1</span>첫번째 참가자 : <span class="start">제시어 : </span><span id="word"></span>
+      </li>
+    </ul>
+  
+    <input type="text">
+    <button>입력</button>
+  </div> -->
+  <!-- 쿵쿵따 -->
 
-  <input type="text">
-  <button>입력</button>
+<!-- 계산기 -->
+<!-- <input type="text" readonly id="input"></input>
+
+<div>
+  <button href="">9</button>
+  <button href="">8</button>
+  <button href="">7</button>
+  <button href="">/</button>
+</div>
+<div>
+  <button href="">6</button>
+  <button href="">5</button>
+  <button href="">4</button>
+  <button href="">*</button>
+</div>
+<div>
+  <button href="">3</button>
+  <button href="">2</button>
+  <button href="">1</button>
+  <button href="">-</button>
+</div>
+<div>
+  <button href="">0</button>
+  <button href="">.</button>
+  <button href="">&#61;</button>
+  <button href="">+</button>
+</div> -->
+<!-- // 계산기 -->
+
+<div class="container">
+  <div class="calculator">
+    <div class="calculator__display--for-advanced">0</div>
+    <div class="calculator__buttons">
+      <div class="clear__and__enter">
+        <button class="clear">AC</button>
+        <button class="calculate">Enter</button>
+      </div>
+      <div class="button__row">
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">+</button>
+      </div>
+      <div class="button__row">
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">-</button>
+      </div>
+      <div class="button__row">
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator">*</button>
+      </div>
+      <div class="button__row">
+        <button class="number double">0</button>
+        <button class="decimal">.</button>
+        <button class="operator">/</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 
